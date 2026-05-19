@@ -1,0 +1,27 @@
+{
+  "method": "HNSW Approximate k-NN",
+  "library": "FAISS",
+  "parameters": {
+    "M": 32,
+    "efConstruction": 200,
+    "efSearch": 64,
+    "k_neighbors": 5,
+    "metric": "L2 (Euclidean)"
+  },
+  "dataset": {
+    "name": "CICIDS-2017",
+    "total_samples": 2520798,
+    "n_features": 52,
+    "preprocessing": "StandardScaler, NaN/Inf replaced with 0"
+  },
+  "computation": {
+    "date": "2026-05-14 01:42:58",
+    "faiss_threads": 16
+  },
+  "thresholds": {
+    "safe": "0.0 - 0.2",
+    "borderline": "0.2 - 0.5",
+    "overlap": "0.5 - 0.8",
+    "severe_overlap": "0.8 - 1.0"
+  }
+}
